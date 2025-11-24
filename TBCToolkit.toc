@@ -8,7 +8,7 @@
 ## SavedVariablesPerCharacter: CasualTBCPrepSettingChar
 ## X-Curse-Project-ID: 1261937
 
-## OptionalDeps: RXPGuides
+##Dependencies: RXPGuides
 
 # Guide
 TBC-Dungeon-Grind-Horde-Allin.lua
