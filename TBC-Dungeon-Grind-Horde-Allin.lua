@@ -5,9 +5,9 @@ end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 3
-#group Consita Classic/TBC Launch Guide
-#subgroup 5 - TBC Dungeon Grind
-#name Dungeon Grind to 70
+#group Consita TBC Guide
+#subgroup 1 - Horde Dungeon Grind to 70
+#name Horde Dungeon Grind incl all Keys
 
 --- |cRXP_FRIENDLY_, |cRXP_ENEMY_, |cRXP_LOOT_, |cRXP_WARN_, |cRXP_PICK_, |cRXP_BUY_
 --- |c99ffff99 OR|r

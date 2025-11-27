@@ -1,12 +1,10 @@
 ## Interface: 11508, 20505
 
-## Title: TBC Horde Quest Preparation
-## Notes: TBC Launch Guide by Consita for Horde only
+## Title: TBC Toolkit
+## Notes: TBC Toolkit addon with multiple guides
 ## Author: Consita
 ## Version: 1
-## SavedVariables: CasualTBCPrepSettingGlobal
-## SavedVariablesPerCharacter: CasualTBCPrepSettingChar
-## X-Curse-Project-ID: 1261937
+
 
 ##Dependencies: RXPGuides
 
