@@ -161,6 +161,14 @@ RXPGuides.RegisterGuide([[
 		.accept 9832 >>Accept The Second and Third Fragments
         .target Khadgar
 
+    step
+        #completewith next
+        .goto Shattrath City,45.12,63.89,5,0
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
+        .fly Swamprat Post >>Fly to |cFFfa9602Swamprat Post|r
+        .target Nutral
+        .zoneskip Terokkar Forest
+
 	step
 		#completewith next
 		.goto Zangarmarsh,50.4,33.3,20 >> Enter |cFFfa9602The Steamvault|r
@@ -170,7 +178,28 @@ RXPGuides.RegisterGuide([[
 		>>Kill and loot him for the |cRXP_LOOT_Second Key Fragment|r
 		.complete 9832,1 
 		.mob Second Fragment Guardian
-		
+
+
+	step
+		#completewith next
+		.hs >> Hearth to |cFFfa9602Shattrath City|r
+		.zoneskip Shattrath City	
+
+    step
+        .goto Shattrath City,54.74,44.32
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Khadgar|r
+       	.turnin 9831 >>Turn In Entry Into Karazhan
+		.accept 9832 >>Accept The Second and Third Fragments
+        .target Khadgar
+
+    step
+        #completewith next
+        .goto Shattrath City,45.12,63.89,5,0
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
+        .fly Area 52 >>Fly to |cFFfa9602Area 52|r
+        .target Nutral
+        .zoneskip Netherstorm
+
 	step
 		#completewith next
 		.goto Netherstorm,74.4,57.7,20 >> Fly to The Arcatraz, unlock the door, then go inside
