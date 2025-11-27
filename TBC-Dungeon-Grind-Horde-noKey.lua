@@ -8,7 +8,7 @@ RXPGuides.RegisterGuide([[
 <<Horde
 #group Consita TBC Toolkit
 #subgroup 1 - TBC Dungeon Grind
-#name Dungeon Grind to 70
+#name Dungeon Grind to 70 without Arcatraz and SH key
 
 --- https://docs.google.com/spreadsheets/d/12fL1aMmTYYnPKwRrFUyrummi5LBZ_OrxceVVLOxqbcU/htmlview
 
@@ -469,24 +469,6 @@ RXPGuides.RegisterGuide([[
 		.zoneskip Orgrimmar
 
 	step
-		.goto Orgrimmar,55.59,62.92
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thathung|r
-		>>|cRXP_BUY_Collect the following items for the |cRXP_LOOT_Shattered Halls Key|r questline:|r
-		>>4x |T133230:0|t[Fel Iron Bar]
-		>>2x |T132854:0|t[Arcane Dust]
-		>>4x |T132839:0|t[Mote of Fire]
-		>>|cRXP_WARN_Buy them from the Auction House if possible|r
-		.collect 23445,4,10757,1
-		.collect 22445,2,10757,1
-		.collect 22574,4,10757,1
-
-	step
-		.goto Orgrimmar,49.58,69.13
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Karus|r
-		.bankdeposit 23445,22445,22574 >>Deposit all items for the |cRXP_LOOT_Shattered Halls Key|r questline
-		.target Karus
-
-	step
 		#completewith next
 		.goto Orgrimmar,45.12,63.89,5,0
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Doras|r
@@ -688,108 +670,6 @@ RXPGuides.RegisterGuide([[
 		.zoneskip Shattrath City	
 
 	step
-		#scryer
-		.goto Shattrath City,58.7,61.5
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Berudan Keysworn|r
-		.bankwithdraw 23445,22445,22574 >>Withdraw all items for the |cRXP_LOOT_Shattered Halls Key|r questline
-		.collect 23445,4,10757,1
-		.collect 22445,2,10757,1
-		.collect 22574,4,10757,1
-		.target Berudan Keysworn
-
-	step
-		#aldor
-		.goto Shattrath City,49.4,28.3
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mendorn|r
-		.bankwithdraw 23445,22445,22574 >>Withdraw all items for the |cRXP_LOOT_Shattered Halls Key|r questline
-		.collect 23445,4,10757,1
-		.collect 22445,2,10757,1
-		.collect 22574,4,10757,1
-		.target Mendorn	
-
-    step
-        #completewith next
-        .goto Shattrath City,45.12,63.89,5,0
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
-        .fly Stonebreaker Hold >>Fly to |cFFfa9602Stonebreaker Hold|r
-        .target Nutral
-        .zoneskip Terokkar Forest
-
-	step
-		.goto Shadowmoon Valley,30.3,29.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drek'Gol|r
-		.fp Shadowmoon Village >> Get the Shadowmoon Village flight path
-		.target Drek'Gol
-
-	step
-		.goto Shadowmoon Valley,29.2,29.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Olrokk|r
-		.skill riding,225,1
-		.target Olrokk
-
-	step
-		.goto Shadowmoon Valley,67.6,36.6
-		>>Kill |cRXP_ENEMY_Smith Gorlunk|r and loot him for |cRXP_LOOT_Primed Key Mold|r
-		.collect 31241,1,10755,1
-		.mob Smith Gorlunk
-
-	step
-		#completewith next
-		.use 31241
-		.accept 10755
-		.itemcount 31241,1
-
-	step
-		#scryer
-		.goto Shadowmoon Valley,30.3,29.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drek'Gol|r
-		.fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
-		.target Drek'Gol
-
-	step
-		#aldor
-		.goto Shadowmoon Valley,63.2,30.4
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maddix|r
-		.fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
-		.target Maddix
-
-    step
-		.goto Hellfire Peninsula,55.0,36.0
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nazgrel|r
-		.turnin 10755
-		.accept 10756
-		.target Nazgrel
-
-    step
-		.goto Hellfire Peninsula,53.2,38.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grand Master Rohok|r
-		.turnin 10756
-		.accept 10757
-		.target Grand Master Rohok	
-
-	step
-		.goto Hellfire Peninsula,53.2,38.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grand Master Rohok|r
-		.turnin 10757
-		.accept 10758
-		.target Grand Master Rohok	
-		
-	step
-		>>Kill |cRXP_ENEMY_Fel Reaver|r and use |T134459:0|t[Unfired Key Mold] on his corpse. You don't need kill credit to use |T134459:0|t[Unfired Key Mold]
-		.line Hellfire Peninsula,70.74,44.49,70.1,44.53,69.48,44.19,68.89,43.27,68.22,42.33,68.36,41.28,68.39,40.21,68.0,39.41,67.52,38.59,66.73,38.31,66.07,38.35,65.47,38.44,64.92,37.64,64.52,36.59,64.36,35.86,63.76,34.78,63.04,34.29,62.29,34.1,61.65,34.33,61.29,34.98,61.12,35.97,60.62,37.1,60.17,38.22,59.91,39.12,59.93,40.05,59.86,41.01,59.82,41.98,60.09,43.05,60.58,43.99,60.95,44.99,61.43,46.11,62.07,47.0,62.73,47.9,63.13,48.73,62.88,49.88,62.81,50.69,62.63,51.75,62.13,52.68,61.71,53.59,61.69,54.53,62.1,55.59,62.74,56.39,63.38,56.8,64.16,56.5,64.68,56.05,65.27,55.9,65.97,55.61,66.63,55.47,67.25,55.5,67.85,55.96,68.51,56.49,69.02,57.43,69.22,58.5,69.28,59.49,69.33,60.44,69.39,61.44,69.14,62.23,68.51,62.07,67.91,61.97,67.37,61.9,66.68,62.12,66.02,62.89,65.98,64.02,65.74,65.29,65.49,66.26,65.17,67.16,64.67,68.02,64.04,68.95,63.4,69.67,62.77,69.95,62.13,71.06,61.8,72.08,61.5,73.06,61.12,74.02,60.94,74.96,60.16,75.3,59.58,75.0,58.89,74.2,58.4,73.13,58.2,72.42,57.72,71.54,56.91,71.25,56.32,71.26,55.66,71.47,55.03,71.79,54.35,71.8,53.71,71.95,53.03,72.04,52.4,71.95,51.95,72.57,51.71,73.45,51.37,74.53,51.22,75.68,50.81,76.49,50.46,77.5,50.23,78.57,49.76,79.75,49.19,80.2,48.54,79.62,48.22,78.53,48.11,77.61,48.08,76.74,47.87,75.83,47.9,74.85,47.83,73.89,47.39,72.92,46.71,72.03,46.61,71.08,46.89,70.09,47.17,69.37,47.87,69.26,48.51,69.55,49.21,69.57,49.87,69.17,50.34,68.28,50.44,67.25,50.24,66.19,50.16,65.27,49.81,64.28,50.16,65.27,50.24,66.19,50.44,67.25,50.35,68.28,49.87,69.17,49.21,69.57,48.51,69.55,47.87,69.26,47.17,69.37,46.89,70.09,46.61,71.08,46.71,72.03,47.39,72.92,47.83,73.89,47.9,74.85,47.87,75.83,48.08,76.74,48.11,77.61,48.22,78.53,48.54,79.62,49.19,80.2,49.76,79.75,50.23,78.57,50.46,77.5,50.81,76.49,51.22,75.68,51.37,74.54,51.71,73.45,51.95,72.57,52.4,71.95,53.03,72.04,53.71,71.95,54.35,71.8,55.03,71.79,55.66,71.47,56.32,71.26,56.91,71.25,57.72,71.54,58.2,72.42,58.4,73.13,58.89,74.2,59.58,75.0,60.16,75.3,60.94,74.96,61.12,74.02,61.5,73.06,61.8,72.08,62.13,71.06,62.76,69.95,63.39,69.67,64.04,68.95,64.67,68.02,65.17,67.16,65.49,66.26,65.74,65.29,65.98,64.02,66.02,62.89,66.68,62.12,67.37,61.9,67.91,61.97,68.51,62.07,69.14,62.24,69.39,61.44,69.33,60.45,69.28,59.49,69.22,58.5,69.02,57.43,68.51,56.49,67.85,55.96,67.25,55.5,66.63,55.47,65.97,55.61,65.28,55.89,64.68,56.05,64.16,56.5,63.38,56.8,62.74,56.39,62.1,55.59,61.69,54.53,61.71,53.59,62.13,52.68,62.63,51.75,62.81,50.69,62.88,49.88,63.13,48.73,62.73,47.9,62.07,47.0,61.43,46.11,60.95,44.99,60.58,43.99,60.09,43.06,59.82,41.98,59.86,41.01,59.93,40.05,59.91,39.12,60.17,38.22,60.62,37.1,61.12,35.97,61.29,34.98,61.65,34.33,62.29,34.1,63.04,34.29,63.76,34.78,64.36,35.86,64.51,36.57,64.92,37.64,65.47,38.44,66.07,38.35,66.72,38.31,67.52,38.59,68.0,39.41,68.39,40.21,68.36,41.28,68.22,42.33,68.88,43.27,69.48,44.19,70.1,44.53,70.74,44.49,71.41,44.02
-		.line Hellfire Peninsula,48.23,30.29,48.11,31.29,48.11,32.24,47.99,33.27,47.88,34.2,47.55,35.27,47.05,36.26,46.86,37.15,46.85,38.04,46.78,39.02,46.71,39.94,46.52,40.93,46.61,41.9,46.5,42.89,46.33,43.87,45.98,44.41,45.31,44.69,44.67,45.23,44.02,45.72,43.39,45.66,42.77,45.69,42.09,45.1,41.46,44.19,40.76,43.41,40.13,43.0,39.47,43.45,38.84,43.64,38.2,43.79,37.57,44.34,36.93,45.06,36.39,45.93,35.83,46.88,34.99,47.08,34.34,46.61,33.69,46.46,33.05,45.52,32.38,45.14,31.78,44.37,31.37,43.06,30.87,42.05,30.61,41.06,30.44,39.95,29.83,39.41,29.16,39.58,28.52,39.71,27.88,39.84,27.25,40.53,27.18,41.69,27.14,42.95,27.85,43.69,28.27,44.93,28.75,45.93,29.15,45.88,29.81,46.51,30.47,47.29,31.09,48.15,31.51,49.36,31.3,50.53,30.46,51.17,29.82,51.28,29.17,51.16,28.52,50.8,27.86,49.81,27.21,48.88,26.59,48.18,25.95,47.74,25.31,47.34,24.61,47.44,23.95,47.45,23.33,47.51,22.68,47.61,22.08,47.75,21.4,47.54,20.77,46.97,20.15,45.9,19.54,45.41,18.91,45.19,18.47,44.07,17.91,43.03,17.27,43.09,16.61,44.02,16.05,44.97,15.62,46.13,15.75,47.49,15.82,48.57,16.26,49.43,16.92,49.98,17.39,50.78,17.55,51.75,17.74,52.74,17.96,53.66,18.26,54.61,18.77,55.63,19.49,56.34,20.13,56.35,20.77,55.69,21.08,54.76,21.29,53.75,22.05,53.18,22.72,53.71,22.94,54.62,23.09,55.62,22.98,56.41,23.22,57.53,23.34,58.49,23.
-		.use 31252
-		.complete 10758,1
-		.unitscan Fel Reaver
-
-
-	step
-		.goto Hellfire Peninsula,53.2,38.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grand Master Rohok|r
-		.turnin 10758
-		.target Grand Master Rohok	
-
-	step
 		#completewith next
 		.goto Hellfire Peninsula,47.7,52.0,10 >>Enter |cFFfa9602The Shattered Halls|r
 
@@ -822,177 +702,6 @@ RXPGuides.RegisterGuide([[
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krexcil|r
 		.fp Area 52 >> Get the Area 52 flight path
 		.target Krexcil
-
-	step
-		.goto Netherstorm,32.4,64.2
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nether-Stalker Khay'ji|r
-		.accept 10265 >>Accept Consortium Crystal Collection
-		.target Nether-Stalker Khay'ji
-
-	step	
-		>>Kill |cRXP_ENEMY_Pentatharon|r (The Dreadlord) and loot him for |cRXP_LOOT_Arklon Crystal Artifact|r
-		.goto Netherstorm,42.7,72.2
-		.complete 10265,1 
-		.mob Pentatharon
-
-	step
-		.goto Netherstorm,32.5,64.3
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nether-Stalker Khay'ji|r
-		.turnin 10265 >>Turn in Consortium Crystal Collection
-		.accept 10262 >>Accept A Heap of Ethereals
-		.target Nether-Stalker Khay'ji
-
-	step
-		>>Note: This quest isn't group friendly but it is essential to do for the Arcatraz Attunement which is needed for Karazhan Attunement.
-		.goto Netherstorm,31.2,74.7
-		>>Kill |cRXP_ENEMY_Zaxxis|r mobs in the area. Loot them for their |cRXP_LOOT_Zaxxis Insignia|r
-		.complete 10262,1
-		.mob Zaxxis Raider
-		.mob Zaxxis Stalker
-		.mob Warp-Raider Nesaad
-
-	step
-		.goto Netherstorm,32.5,64.3
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nether-Stalker Khay'ji|r
-		.turnin 10262 >>Turn in A Heap of Ethereals
-		.accept 10205 >>Accept Warp-Raider Nesaad
-		.target Nether-Stalker Khay'ji
-
-	step
-		>>Kill |cRXP_ENEMY_Warp-Raider Nesaad|r
-		.goto Netherstorm,28.0,79.2
-		.complete 10205,1 
-		.mob Warp-Raider Nesaad
-
-	step
-		.goto Netherstorm,32.5,64.3
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nether-Stalker Khay'ji|r
-		.turnin 10205 >>Turn in Warp-Raider Nesaad
-		.accept 10266 >>Accept Request for Assistance
-		.target Nether-Stalker Khay'ji
-
-	step
-		.goto Netherstorm,46.7,57.0
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gahruj|r
-		.turnin 10266 >>Turn in Request for Assistance
-		.accept 10267 >>Accept Rightful Repossession
-		.target Gahruj
-
-	step
-		>>This quest isn't group friendly but it is essential to do for the Arcatraz Attunement which is needed for Karazhan Attunement
-		>>Loot |cRXP_LOOT_Box of Surveying Equipment|r on the ground in the area
-		.goto Netherstorm,57.5,66.8
-		.complete 10267,1
-
-	step
-		.goto Netherstorm,46.7,57.0
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gahruj|r
-		.turnin 10267 >>Turn in Rightful Repossession
-		.accept 10268 >>Accept An Audience with the Prince
-		.target Gahruj
-
-	step
-		.goto Netherstorm,45.3,34.9
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Grennik|r
-		.fp Stormspire >> Get The Stormspire flight path
-		.target Grennik
-
-	step
-		.goto Netherstorm,45.8,36.0
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Nexus-Prince Haramad|r
-		.turnin 10268 >>Turn in An Audience with the Prince
-		.accept 10269 >>Accept Triangulation Point One
-		.target Image of Nexus-Prince Haramad
-
-	step
-		.goto Netherstorm,66.7,33.6
-		.use 28962 >>Use the |T135164:0|t[Triangulation Device] at the 3-way fork in the road, northeast of Manaforge Ultris
-		.complete 10269,1 
-
-	step
-		.goto Netherstorm,58.4,31.3
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dealer Hazzin|r
-		.turnin 10269 >>Turn in Triangulation Point One
-		.accept 10275 >>Accept Triangulation Point Two
-		.target Dealer Hazzin
-
-	step
-		.goto Netherstorm,29.0,41.2
-		.use 29018 >>Use the |T135164:0|t[Triangulation Device] east of the bottom of Manaforge Ara
-		.complete 10275,1 
-
-	step
-		.goto Netherstorm,34.6,37.9
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wind Trader Tuluman|r
-		.turnin 10275 >>Turn in Triangulation Point Two
-		.accept 10276 >>Accept Full Triangle
-		.target Wind Trader Tuluman
-
-	step
-		>>Kill |cRXP_ENEMY_Culuthas|r (Level 70 Elite Demon) and loot him for |cRXP_LOOT_Ata'mal Crystal|r
-		.goto Netherstorm,53.5,21.5
-		.complete 10276,1 
-		.mob Culuthas
-
-	step
-		.goto Netherstorm,45.9,36.0
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Image of Nexus-Prince Haramad|r
-		.turnin 10276 >>Turn in Full Triangle
-		.accept 10280 >>Accept Special Delivery to Shattrath City
-		.target Image of Nexus-Prince Haramad
-
-	step
-		#completewith next
-		.hs >> Hearth to |cFFfa9602Shattrath City|r
-		.zoneskip Shattrath City	
-
-    step
-        .goto Shattrath City,54.6,44.6
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_A'dal|r
-        .turnin 10280
-		.accept 10704
-        .target A'dal
-
-	step
-		#completewith next
-		.goto Netherstorm,71.7,55.1,20 >> Fly to |cFFfa9602The Botanica|r, then go inside
-
-	step
-		>>Kill |cRXP_ENEMY_Warpsplinter|r at the end of |cFFfa9602The Botanica|r and loot him to obtain the |cRXP_LOOT_Top Shard of the Arcatraz Key|r
-		.complete 10704,1
-		.mob Warpsplinter
-
-	step
-		#completewith next
-		+Exit the dungeon and prepare to run |cFFfa9602Mechanar|r. Go back to Cosmowrench if you need to vendor/repair
-
-	step
-		#completewith next
-		.goto Netherstorm,70.6,69.8,20 >> Fly to |cFFfa9602The Mechanar|r, then go inside
-
-	step
-		>>Kill |cRXP_ENEMY_Pathaleon|r and loot him for the |cRXP_LOOT_Bottom Shard of the Arcatraz Key|r
-		.complete 10704,2
-		.mob Pathaleon
-
-	step
-		#completewith next
-		.hs >> Hearth to |cFFfa9602Shattrath City|r
-		.zoneskip Shattrath City	
-
-	step
-		.goto Shattrath City,54.0,44.9
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_A'dal|r
-		.turnin 10704 >>Turn in How to Break Into the Arcatraz
-		.target A'dal
-
-	 step
-        #completewith next
-        .goto Shattrath City,45.12,63.89,5,0
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
-        .fly Area 52 >>Fly to |cFFfa9602Area 52|r
-        .target Nutral
-        .subzoneskip 3712
 
 	step
 		#completewith next
@@ -1072,7 +781,7 @@ RXPGuides.RegisterGuide([[
 
 	step
 		>>Clear |cFFfa9602The Botancia|r until you reach revered reputation with |cRXP_FRIENDLY_Sha'tar|r
-        >>This will take around 8 runs with an average of 1600 rep per run
+        >>You will get an average of 1600 rep per run
         .reputation 935,Revered  
 
 	step
