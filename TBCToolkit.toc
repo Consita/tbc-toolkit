@@ -10,3 +10,7 @@
 
 # Guide
 TBC-Dungeon-Grind-Horde-Allin.lua
+TBC-Dungeon-Grind-Horde-noKey.lua
+Arcatraz-Key.lua
+Shattered-Halls-Key.lua
+Karazhan-Attunement.lua
