@@ -340,6 +340,6 @@ RXPGuides.RegisterGuide([[
         .target Khadgar	
 
 	step
-		+Congratulations, you have now unlocked the |cRXP_LOOT_Karazhan Attunement|r!
+		+Congratulations, you have now completed the |cRXP_LOOT_Karazhan Attunement|r!
 
 ]])
