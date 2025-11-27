@@ -15,6 +15,11 @@ RXPGuides.RegisterGuide([[
 --- Go through Portal
 
 	step
+		#completewith next
+		.zone Blasted Lands >> Travel to |cFFfa9602Blasted Lands|r
+		.zoneskip Blasted Lands
+
+	step
 		.goto Blasted Lands,58.09,56.00
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dar'toon|r
 		.accept 9407 >> Accept Through the Dark Portal
@@ -72,6 +77,7 @@ RXPGuides.RegisterGuide([[
 	step
 		#completewith next
 		.subzone 3718 >>Travel to |cFFfa9602Swamprat Post|r in Zangarmarsh
+		.subzoneskip 3718
 
     step
         .goto Zangarmarsh,84.76,55.11
@@ -81,7 +87,7 @@ RXPGuides.RegisterGuide([[
     
 	step
 		#completewith next
-		.zone Shattrath City >>Travel to |cFFfa9602Shattrath City|r
+		.fly Shattrath City >>Travel to |cFFfa9602Shattrath City|r
 		.zoneskip Shattrath City
 		
 	step
@@ -187,6 +193,7 @@ RXPGuides.RegisterGuide([[
 	step
 		#completewith next
 		.subzone 3683 >>Travel to |cFFfa9602Stonebreaker Hold|r
+		.subzoneskip 3683
 
 	step
 		.goto Terokkar Forest,49.2,43.6
@@ -816,6 +823,12 @@ RXPGuides.RegisterGuide([[
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Olrokk|r
 		.skill riding,225,1
 		.target Olrokk	
+
+	step
+		.goto Blade's Edge Mountains,52.05,54.11
+		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Unoke Tenderhoof|r
+		.fp Thunderlord Stronghold >> Get the Thunderlord Stronghold flight path
+		.target Unoke Tenderhoof		
 
 	step
 		.goto Netherstorm,33.7,64.0

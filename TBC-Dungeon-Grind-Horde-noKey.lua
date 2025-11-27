@@ -15,6 +15,11 @@ RXPGuides.RegisterGuide([[
 --- Go through Portal
 
 	step
+		#completewith next
+		.zone Blasted Lands >> Travel to |cFFfa9602Blasted Lands|r
+		.zoneskip Blasted Lands
+
+	step
 		.goto Blasted Lands,58.09,56.00
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dar'toon|r
 		.accept 9407 >> Accept Through the Dark Portal
@@ -72,6 +77,7 @@ RXPGuides.RegisterGuide([[
 	step
 		#completewith next
 		.subzone 3718 >>Travel to |cFFfa9602Swamprat Post|r in Zangarmarsh
+		.subzoneskip 3718
 
     step
         .goto Zangarmarsh,84.76,55.11
@@ -81,7 +87,7 @@ RXPGuides.RegisterGuide([[
     
 	step
 		#completewith next
-		.zone Shattrath City >>Travel to |cFFfa9602Shattrath City|r
+		.fly Shattrath City >>Travel to |cFFfa9602Shattrath City|r
 		.zoneskip Shattrath City
 		
 	step
@@ -187,6 +193,7 @@ RXPGuides.RegisterGuide([[
 	step
 		#completewith next
 		.subzone 3683 >>Travel to |cFFfa9602Stonebreaker Hold|r
+		.subzoneskip 3683
 
 	step
 		.goto Terokkar Forest,49.2,43.6
@@ -669,6 +676,14 @@ RXPGuides.RegisterGuide([[
 		.hs >> Hearth to |cFFfa9602Shattrath City|r
 		.zoneskip Shattrath City	
 
+    step
+        #completewith next
+        .goto Shattrath City,45.12,63.89,5,0
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
+        .fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
+        .target Nutral
+        .zoneskip Hellfire Peninsula
+
 	step
 		#completewith next
 		.goto Hellfire Peninsula,47.7,52.0,10 >>Enter |cFFfa9602The Shattered Halls|r
@@ -698,6 +713,12 @@ RXPGuides.RegisterGuide([[
 		.target Olrokk	
 
 	step
+		.goto Blade's Edge Mountains,52.05,54.11
+		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Unoke Tenderhoof|r
+		.fp Thunderlord Stronghold >> Get the Thunderlord Stronghold flight path
+		.target Unoke Tenderhoof
+
+	step
 		.goto Netherstorm,33.7,64.0
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Krexcil|r
 		.fp Area 52 >> Get the Area 52 flight path
@@ -712,6 +733,11 @@ RXPGuides.RegisterGuide([[
 		>>Kill and loot him for the |cRXP_LOOT_Third Key Fragment|r
 		.complete 9832,2
 		.mob Third Fragment Guardian	
+
+	step
+		#completewith next
+		.hs >> Hearth to |cFFfa9602Shattrath City|r
+		.zoneskip Shattrath City	
 
     step
         .goto Shattrath City,54.74,44.32
