@@ -11,38 +11,6 @@ RXPGuides.RegisterGuide([[
 		.zone Orgrimmar >> Take the Portal to |cFFfa9602Orgrimmar|r
 		.zoneskip Orgrimmar
 		
-	step << Paladin
-		.goto Orgrimmar,32.4,35.8
-		.trainer >> Go and train your class spells
-
-	step << Shaman
-		.goto Orgrimmar,38.6,36.0
-		.trainer >> Go and train your class spells
-
-	step << Hunter
-		.goto Orgrimmar,66.1,18.5
-		.trainer >> Go and train your class spells
-
-	step << Warrior
-		.goto Orgrimmar,79.7,31.4
-		.trainer >> Go and train your class spells
-
-	step << Rogue
-		.goto Orgrimmar,44.0,54.6
-		.trainer >> Go and train your class spells
-
-	step << Warlock
-		.goto Orgrimmar,48.0,46.0
-		.trainer >> Go and train your class spells
-
-	step << Mage
-		.goto Orgrimmar,38.8,85.6
-		.trainer >> Go and train your class spells
-
-	step << Priest
-		.goto Orgrimmar,35.6,87.8
-		.trainer >> Go and train your class spells
-
 	step
 		#completewith next
 		.goto Durotar,50.6,12.6,20 >>Take the Zeppelin to Grom'Gol Base Camp in Stranglethorn Vale
