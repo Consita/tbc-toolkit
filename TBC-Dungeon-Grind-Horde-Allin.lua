@@ -5,9 +5,9 @@ end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 3
-#group Consita TBC Guide
-#subgroup 1 - Horde Dungeon Grind to 70
-#name Horde Dungeon Grind incl all Keys
+#group Consita TBC Toolkit
+#subgroup 1 - (H) Dungeon Grind to 70
+#name (H) Dungeon Grind incl all Keys
 
 --- https://docs.google.com/spreadsheets/d/12fL1aMmTYYnPKwRrFUyrummi5LBZ_OrxceVVLOxqbcU/htmlview
 

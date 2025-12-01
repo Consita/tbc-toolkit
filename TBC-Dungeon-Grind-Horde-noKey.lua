@@ -7,8 +7,8 @@ RXPGuides.RegisterGuide([[
 #version 3
 <<Horde
 #group Consita TBC Toolkit
-#subgroup 1 - TBC Dungeon Grind
-#name Dungeon Grind to 70 without Arcatraz and SH key
+#subgroup 1 - (H) Dungeon Grind to 70
+#name (H) Dungeon Grind without Arcatraz and SH key
 
 --- https://docs.google.com/spreadsheets/d/12fL1aMmTYYnPKwRrFUyrummi5LBZ_OrxceVVLOxqbcU/htmlview
 
