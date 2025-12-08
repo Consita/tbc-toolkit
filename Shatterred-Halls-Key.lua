@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
         .target Nutral
         .zoneskip Shadowmoon Valley	
 
-step
+	step
 		.goto Shadowmoon Valley,67.6,36.6
 		>>Kill |cRXP_ENEMY_Smith Gorlunk|r and loot him for |cRXP_LOOT_Primed Key Mold|r
 		.collect 31241,1,10755,1
