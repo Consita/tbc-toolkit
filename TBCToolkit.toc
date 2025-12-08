@@ -14,5 +14,5 @@ TBC-Dungeon-Grind-Horde-noKey.lua
 TBC-Dungeon-Grind-Alliance-Allin.lua
 TBC-Dungeon-Grind-Alliance-noKey.lua
 Arcatraz-Key.lua
-Shatterred-Halls-Key
+Shattered-Halls-Key
 Karazhan-Attunement.lua
