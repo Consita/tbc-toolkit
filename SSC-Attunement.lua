@@ -13,7 +13,7 @@ RXPGuides.RegisterGuide([[
         #completewith next
         .goto Zangarmarsh,50.37,40.90,20,0
         .goto Zangarmarsh,49.018,35.631
-        .subzone 3717 >> |cRXP_WARN_Find a group for HEROIC: Slave Pens in Zangarmarsh. Once you have found a group, zone into the Slave Pens|r
+        .subzone 3717 >> |cRXP_WARN_Find a group for|r |cFFfa9602SHEROIC: Slave Pens in Zangarmarsh|r|cRXP_WARN_. Once you have found a group, zone into the Slave Pens|r
 
     step
         >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skar'this the Heretic|r 

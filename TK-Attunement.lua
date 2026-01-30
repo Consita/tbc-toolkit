@@ -7,11 +7,11 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group Consita TBC Toolkit
 #subgroup 3 - Attunements
-#name T5 - Serpentshrine Cavern
+#name T5 - Tempest Keep
 
     step
         #completewith next
-        .zone Shadowmoon Valley >> Travel to Shadowmoon Valley
+        .zone Shadowmoon Valley >> Travel to |cFFfa9602SShadowmoon Valley|r
 
     step << Alliance
         .goto Shadowmoon Valley,36.368,56.953
