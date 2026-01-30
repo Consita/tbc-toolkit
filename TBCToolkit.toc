@@ -17,3 +17,5 @@ Arcatraz-Key.lua
 Shattered-Halls-Key.lua
 Karazhan-Attunement.lua
 Nightbane.lua
+SSC-Attunement.lua
+TK-Attunement.lua

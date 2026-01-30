@@ -5,6 +5,7 @@ end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 3
+<<Horde
 #group Consita TBC Toolkit
 #subgroup 1 - (H) Dungeon Grind to 70
 #name (H) Dungeon Grind incl all Keys
