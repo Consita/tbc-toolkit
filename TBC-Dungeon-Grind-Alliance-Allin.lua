@@ -20,10 +20,10 @@ RXPGuides.RegisterGuide([[
 		.zoneskip Blasted Lands
 
 	step
-		.goto Blasted Lands,58.09,56.00
-		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dar'toon|r
-		.accept 9407 >> Accept Through the Dark Portal
-		.target Warlord Dar'toon
+		.goto Blasted Lands,58.4,55.8
+		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Watch Commander Relthorn Netherwane|r
+		.accept 10119
+		.target Watch Commander Relthorn Netherwane
 
 	step
 		#completewith next
@@ -31,48 +31,46 @@ RXPGuides.RegisterGuide([[
 		.zone Hellfire Peninsula >> Go through the Dark Portal
 
     step
-		.goto Hellfire Peninsula,87.35,49.80
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lieutenant General Orion|r
-        .turnin 9407
-        .accept 10120
-        .target Lieutenant General Orion
+		.goto Hellfire Peninsula,87.4,50.6
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Duron|r
+        .turnin 10119
+        .accept 10288
+        .target Commander Duron
 
     step
-        .goto Hellfire Peninsula,87.34,48.13
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vlagga Freyfeather|r
-        .turnin 10120
-        .accept 10289
-        .target Vlagga Freyfeather   
+        .goto Hellfire Peninsula,87.4,52.4
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Amish Wildhammer|r
+        .turnin 10288
+        .accept 10140
+        .target Amish Wildhammer
 
     step
-        .goto Hellfire Peninsula,87.34,48.13
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vlagga Freyfeather|r
-		.fly Thrallmar >> Fly to |cFFfa9602Thrallmar|r
+        .goto Hellfire Peninsula,87.4,52.4
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Amish Wildhammer|r
+		.fly Honor Hold >> Fly to |cFFfa9602Honor Hold|r
         .skipgossip
-        .target Vlagga Freyfeather       
+        .target Amish Wildhammer      
         
     step
-        .goto Hellfire Peninsula,55.89,36.60,15,0
-		.goto Hellfire Peninsula,55.86,37.12
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Krakork|r
+        .goto Hellfire Peninsula,54.6,62.6
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Isildor|r
         .turnin 10289
-        .target General Krakork       
+        .target Marshal Isildor     
         
     step
-        .goto Hellfire Peninsula,56.71,37.47
-        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Floyd Pinkus|r
-        .home >> Set your Hearthstone to |cFFfa9602Thrallmar|r
-        .target Floyd Pinkus  
+        .goto Hellfire Peninsula,54.2,63.6
+        >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sid Limbardi|r
+        .home >> Set your Hearthstone to |cFFfa960Honor Hold|r
+        .target Sid Limbardi
 
 	step
 		#completewith next
-		.goto Hellfire Peninsula,46.0,58.7,20,0
 		.goto Hellfire Peninsula,46.1,51.7,20 >> Travel to |cFFfa9602The Blood Furnace|r. At the waypoint look for wooden stairs that lead up to the wall. Riding along this wall will take you to the instance.
 
 	step
-		>>Clear |cFFfa9602The Blood Furnace|r until you reach 5999 reputation into friendly with |cRXP_FRIENDLY_Thrallmar|r
+		>>Clear |cFFfa9602The Blood Furnace|r until you reach 5999 reputation into friendly with |cRXP_FRIENDLY_Honor Hold|r
         >>This will take around 12 runs with an average of 750 rep per run
-        .reputation 947,Friendly,5999
+        .reputation 946,Friendly,5999
 
 	step
 		#completewith next

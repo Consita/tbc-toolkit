@@ -83,6 +83,11 @@ step
 
 	step
 		#completewith next
+		.hs >>Hearth to |cFFfa9602Shattrath City|r
+		.zoneskip Shattrath City
+
+	step
+		#completewith next
 		.goto Shattrath City,45.12,63.89,5,0
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
 		.fly Area 52 >>Travel to |cFFfa9602Area 52|r
@@ -113,6 +118,11 @@ step
 		>>Kill |cRXP_ENEMY_Grand Warlock Nethekurse|r and loot him for the |cRXP_LOOT_Tome of Dusk|r
 		.complete 9637,2
 		.mob Grand Warlock Nethekurse	
+
+	step
+		#completewith next
+		.hs >>Hearth to |cFFfa9602Shattrath City|r
+		.zoneskip Shattrath City
 
 	step
 		#completewith next
