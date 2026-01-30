@@ -47,7 +47,7 @@ RXPGuides.RegisterGuide([[
     step
         .goto Hellfire Peninsula,87.34,48.13
         >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vlagga Freyfeather|r
-		.fly Thrallmar >> Fly to |cFFfa9602Thrallmar|r
+		.fly Honor Hold >> Fly to |cFFfa9602Honor Hold|r
         .skipgossip
         .target Vlagga Freyfeather       
         
@@ -61,7 +61,7 @@ RXPGuides.RegisterGuide([[
     step
         .goto Hellfire Peninsula,56.71,37.47
         >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Floyd Pinkus|r
-        .home >> Set your Hearthstone to |cFFfa9602Thrallmar|r
+        .home >> Set your Hearthstone to |cFFfa9602Honor Hold|r
         .target Floyd Pinkus  
 
 	step
@@ -70,9 +70,9 @@ RXPGuides.RegisterGuide([[
 		.goto Hellfire Peninsula,46.1,51.7,20 >> Travel to |cFFfa9602The Blood Furnace|r. At the waypoint look for wooden stairs that lead up to the wall. Riding along this wall will take you to the instance.
 
 	step
-		>>Clear |cFFfa9602The Blood Furnace|r until you reach 5999 reputation into friendly with |cRXP_FRIENDLY_Thrallmar|r
+		>>Clear |cFFfa9602The Blood Furnace|r until you reach 5999 reputation into friendly with |cRXP_FRIENDLY_Honor Hold|r
         >>This will take around 12 runs with an average of 750 rep per run
-        .reputation 947,Friendly,5999
+        .reputation 946,Friendly,5999
 
 	step
 		#completewith next
@@ -680,7 +680,7 @@ RXPGuides.RegisterGuide([[
         #completewith next
         .goto Shattrath City,45.12,63.89,5,0
         >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nutral|r
-        .fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
+        .fly Honor Hold >>Fly to |cFFfa9602Honor Hold|r
         .target Nutral
         .zoneskip Hellfire Peninsula
 
@@ -689,9 +689,9 @@ RXPGuides.RegisterGuide([[
 		.goto Hellfire Peninsula,47.7,52.0,10 >>Enter |cFFfa9602The Shattered Halls|r
 
 	step
-		>>Clear |cFFfa9602The Shattered Halls|r until you reach revered reputation with |cRXP_FRIENDLY_Thrallmar|r
+		>>Clear |cFFfa9602The Shattered Halls|r until you reach revered reputation with |cRXP_FRIENDLY_Honor Hold|r
         >>This will take around 8 runs with an average of 1600 rep per run
-        .reputation 947,Revered  
+        .reputation 946,Revered  
 
 	step
 		#completewith next

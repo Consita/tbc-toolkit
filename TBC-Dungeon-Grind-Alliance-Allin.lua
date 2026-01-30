@@ -748,14 +748,14 @@ RXPGuides.RegisterGuide([[
 		#scryer
 		.goto Shadowmoon Valley,30.3,29.2
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Drek'Gol|r
-		.fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
+		.fly Honor Hold >>Fly to |cFFfa9602Honor Hold|r
 		.target Drek'Gol
 
 	step
 		#aldor
 		.goto Shadowmoon Valley,63.2,30.4
 		>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maddix|r
-		.fly Thrallmar >>Fly to |cFFfa9602Thrallmar|r
+		.fly Honor Hold >>Fly to |cFFfa9602Honor Hold|r
 		.target Maddix
 
     step
@@ -799,9 +799,9 @@ RXPGuides.RegisterGuide([[
 		.goto Hellfire Peninsula,47.7,52.0,10 >>Enter |cFFfa9602The Shattered Halls|r
 
 	step
-		>>Clear |cFFfa9602The Shattered Halls|r until you reach revered reputation with |cRXP_FRIENDLY_Thrallmar|r
+		>>Clear |cFFfa9602The Shattered Halls|r until you reach revered reputation with |cRXP_FRIENDLY_Honor Hold|r
         >>This will take around 8 runs with an average of 1600 rep per run
-        .reputation 947,Revered  
+        .reputation 946,Revered  
 
 	step
 		#completewith next
