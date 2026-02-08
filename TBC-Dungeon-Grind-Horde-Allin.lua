@@ -307,6 +307,10 @@ RXPGuides.RegisterGuide([[
 		.collect 27991
 
 	step
+		>>Clear |cFFfa9602The Sethekk Halls|r, |cFFfa9602Manatombs|r or simply quest until you reach level 68
+		.xp 68
+
+	step
 		#completewith next
 		.hs >> Hearth to |cFFfa9602Shattrath City|r
 		.zoneskip Shattrath City

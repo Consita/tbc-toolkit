@@ -11,7 +11,7 @@ RXPGuides.RegisterGuide([[
 
     step
         #completewith next
-        .zone Shadowmoon Valley >> Travel to |cFFfa9602SShadowmoon Valley|r
+        .zone Shadowmoon Valley >> Travel to |cFFfa9602Shadowmoon Valley|r
 
     step << Alliance
         .goto Shadowmoon Valley,36.368,56.953
